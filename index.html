@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space tourism</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body class="font-bell">
+    <header class="container z-[1000] fixed left-0 right-0 mx-auto p-4 flex items-center justify-between md:flex-row">
+        <div class="flex flex-row">
+            <img class="bg-white rounded-full" src="/images/shared/logo.svg" alt="logo">
+            <hr>
+        </div>
+
+        <div class="bg-lightDark hidden md:flex">
+            <nav>
+                <ul class="flex flex-col text-white md:flex-row md:p-4">
+                    <li class="p-4"><a href="#hero"><span class="p-2 font-bold">00</span><span class="text-gray-300 border-b">HOME</span></a></li>
+                    <li class="p-4"><a href="#destination"><span class="p-2 font-bold">01</span><span class="text-gray-300">DESTINATION</span></a></li>
+                    <li class="p-4"><a href="#crew"><span class="p-2 font-bold">02</span><span  class="text-gray-300">CREW</span></a></li>
+                    <li class="p-4"><a href="#tech"><span class="p-2 font-bold">03</span><span class="text-gray-300">TECHNOLOGY</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="mobile-nav" class="absolute  top-[100%] bg-lightDark min-w-full hidden">
+
+            <nav>
+                <ul class="flex flex-col text-white md:flex-row md:p-4">
+                    <li class="p-4"><a href="#hero"><span class="p-2 font-bold">00</span><span class="text-gray-300">HOME</span></a></li>
+                    <li class="p-4"><a href="#destination"><span class="p-2 font-bold">01</span><span class="text-gray-300">DESTINATION</span></a></li>
+                    <li class="p-4"><a href="#crew"><span class="p-2 font-bold">02</span><span class="text-gray-300">CREW</span></a></li>
+                    <li class="p-4"><a href="#tech"><span class="p-2 font-bold">03</span><span class="text-gray-300">TECHNOLOGY</span></a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div id="hamburger" class="cursor-pointer md:hidden mr-4">
+            <img src="/images/shared/icon-hamburger.svg" alt="">
+        </div>
+
+        <div id="anti-hamburger" class="mr-4 cursor-pointer hidden md:hidden">
+            <img src="/images/shared/icon-close.svg" alt="">
+        </div>
+    </header>
+
+
+    <main>
+        <section id="hero" class="z-[999] container w-full mx-auto min-h-screen min-w-full bg-no-repeat bg-center bg-cover" style="background-image: url(/images/home/background-home-desktop.jpg);">
+            <div class="mx-auto pt-60 px-10 container flex space-y-20 flex-col items-center md:flex-row space-x-10 justify-between ">
+                <div class="container flex flex-col space-y-4">
+                    <h3 class="text-gray-300 text-2xl">
+                        SO, YOU WANT TO TRAVEL TO
+                    </h3>
+                    <h1 class="text-6xl text-white md:text-9xl">
+                        SPACE
+                    </h1>
+                    <p class="text-gray-500">
+                        Let's face it; if you want to go to space, you might as well genuinely go to outer
+                        space and not hover kind of on the edge of it. Well sit back, and relax because we'll
+                        give you a truly out of this world experience!
+                    </p>
+                </div>
+                <div>
+                    <img id="aeronaut" src="/images/added/pexels-pixabay-39561-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="destination" class="z-[999]container mx-auto min-h-screen min-w-full bg-no-repeat bg-center bg-cover" style="background-image: url(/images/destination/background-destination-desktop.jpg);">
+            <div class="min-w-full mx-auto pt-20 px-10 container flex justify-center  space-x-20 space-y-20 flex-col items-center md:flex-row-reverse">
+                <div class="container flex flex-col space-y-4 md:flex-row-reverse justify-between">
+                   
+                    <div class="md:w-1/2">
+
+                        <div class="pb-10 w-[100%]">
+                            <ul id="destination-switch" class="flex flex-row items-center justify-between text-gray-300">
+                                <li id="ls-1" class="border-b-2 cursor-pointer">MARS</li>
+                                <li id="ls-2" class="cursor-pointer border-b-transparent">MOON</li>
+                                <li id="ls-3" class="cursor-pointer border-b-transparent">EUROPA</li>
+                                <li id="ls-4" class="cursor-pointer border-b-transparent">TITAN</li>
+                            </ul>
+                        </div>
+    
+                        <h3 class="text-gray-400">
+                            SO, YOU WANT TO TRAVEL TO
+                        </h3>
+                        <h1 id="place" class="text-6xl text-white md:text-9xl my-4">
+                            MARS
+                        </h1>
+                        <p id="detail" class="text-gray-500">
+                            Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain
+                            in our soloar system. It's two and a half times the size of Everest!
+                        </p>
+                        <div class="pt-12 flex flex-col space-y-4 md\:flex-row">
+                            <hr class="border-gray-700 pb-4">
+                            <ul  class="flex flex-row items-center justify-between">
+                                <li class="text-gray-500 text-sm">
+                                    AVG. DISTANCE
+                                </li>
+                                <li class="text-gray-500 text-sm">
+                                    CST. TRAVEL TIME
+                                </li>
+                            </ul>
+                            <ul class="flex flex-row items-center justify-between">
+                                <li id="distance" class="font-bold text-gray-400 text-sm md:text-2xl">225 MILL.KM</li>
+                                <li id="time" class="font-bold text-gray-400 text-sm md:text-2xl">9 MONTHS</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-20">
+                        <h1 class="text-center text-2xl mb-20 space-x-4"><span class="text-gray-500">01</span><span class="text-gray-300">PICK YOUR DESTINATION</span></h1>
+                        <img id="aeronaut" src="/images/destination/image-mars.png" alt="">
+                    </div>
+
+                </div>
+            </div>       
+        </section>
+
+        <section id="crew" class="z-\[999\] mx-auto min-h-screen min-w-full bg-no-repeat bg-center bg-cover" style="background-image: url(/images/crew/background-crew-desktop.jpg);">
+            <div class="min-w-full mx-auto pt-20 px-10 container flex space-y-20 flex-col items-center md:flex-row space-x-10 justify-between ">
+                <div class="container flex flex-col space-y-10 md:w-1/2">
+
+                    <h1 class="text-2xl mb-20 space-x-4"><span class="text-gray-500">02</span><span class="text-gray-300">MEET YOUR CREW</span></h1>
+
+
+                    <h3 class="text-gray-400 text-3xl">
+                        FLIGHT ENGINEER
+                    </h3>
+                    <h1 class="text-4xl text-white md:text-5xl">
+                        ANOUSHEH ANSARI
+                    </h1>
+                    <p class="text-gray-500">
+                       Anousheh Ansari is an iranian American Engineer and co-founder of Prodea Systems. Ansari was the fourth sel-funded space tourist, the first self-funded woman to fly to the ISS, and the first iranian in space
+                    </p>
+                    
+                </div>
+                <div class="flex flex-col text-gray-500 items-center space-y-20">
+                    <img src="/images/crew/image-anousheh-ansari.png" alt="">
+                </div>
+            </div>       
+        </section>
+
+
+        <section id="tech" class="z-\[999\] mx-auto min-h-screen min-w-full bg-no-repeat bg-center bg-cover" style="background-image: url(/images/crew/background-crew-desktop.jpg);">
+            <div class="min-w-full mx-auto pt-20 px-10 container flex space-y-20 flex-col items-center md:flex-row space-x-10 justify-between ">
+                <div class="container flex flex-col space-y-10 md:w-1/2">
+
+                    <h1 class="text-2xl text-right mb-20 space-x-4"><span class="text-gray-500">03</span><span class="text-gray-300">SPACE LAUNCH 101</span></h1>
+
+                    <div class="flex space-y-10 flex-col md:flex-row items-center justify-between space-x-6 text-white">
+                        <div class="mx-auto hidden md:flex">
+                            <ul class="flex space-x-10 mx-auto md:space-x-0 md:space-y-10 flex-row md:flex-col justify-between">
+                                <li id="vehicle" class="cursor-pointer w-10 h-10 font-bold flex items-center justify-center text-black rounded-full bg-white">1</li>
+                                <li id="spaceport" class="cursor-pointer w-10 h-10 font-bold flex items-center justify-center text-white rounded-full bg-transparent border">2</li>
+                                <li id="capsule" class="cursor-pointer w-10 h-10 font-bold flex items-center justify-center text-white rounded-full bg-transparent border">3</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-10 border-l-2 pl-4">
+                            <p class="text-gray-300">THE TERMINOLOGY_</p>
+                            <h1 id="itemtolaunch" class="text-4xl text-gray-200">
+                                LAUNCH VEHICLE
+                            </h1>
+                            <p id="itemdetail" class="text-gray-300">
+                                A lauch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier
+                                rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the lauch pad!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mx-auto flex md:hidden">
+                        <ul class="flex space-x-10 mx-auto flex-row md:flex-col justify-between">
+                            <li id="vehicle" class="cursor-pointer w-10 h-10 font-bold flex items-center justify-center text-black rounded-full bg-white">1</li>
+                            <li id="spaceport" class="cursor-pointer w-10 h-10 font-bold flex items-center justify-center text-white rounded-full bg-transparent border">2</li>
+                            <li id="capsule" class="cursor-pointer w-10 h-10 font-bold flex items-center justify-center text-white rounded-full bg-transparent border">3</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="flex flex-col text-gray-500 items-center space-y-20">
+                    <img src="/images/technology/image-launch-vehicle-portrait.jpg" alt="">
+                </div>
+                
+        </section>
+
+
+    </main>
+</body>
+</html>
